@@ -8,7 +8,7 @@
 #define SECP256K1_NUM_IMPL_H
 
 #if defined HAVE_CONFIG_H
-#include "libsecp256k1-config.h"
+#include "../../secp256k1-config.h"
 #endif
 
 #include "num.h"

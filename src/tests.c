@@ -5,7 +5,7 @@
  **********************************************************************/
 
 #if defined HAVE_CONFIG_H
-#include "libsecp256k1-config.h"
+#include "../../secp256k1-config.h"
 #endif
 
 #include <stdio.h>
@@ -15,7 +15,7 @@
 #include <time.h>
 
 #include "secp256k1.c"
-#include "include/secp256k1.h"
+#include "secp256k1.h"
 #include "testrand_impl.h"
 
 #ifdef ENABLE_OPENSSL_TESTS
@@ -28,8 +28,8 @@ void ECDSA_SIG_get0(const ECDSA_SIG *sig, const BIGNUM **pr, const BIGNUM **ps) 
 # endif
 #endif
 
-#include "contrib/lax_der_parsing.c"
-#include "contrib/lax_der_privatekey_parsing.c"
+#include "lax_der_parsing.c"
+#include "lax_der_privatekey_parsing.c"
 
 #if !defined(VG_CHECK)
 # if defined(VALGRIND)
