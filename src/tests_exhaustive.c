@@ -4,9 +4,7 @@
  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
  **********************************************************************/
 
-#if defined HAVE_CONFIG_H
 #include "../../secp256k1-config.h"
-#endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -508,4 +506,3 @@ int main(void) {
     secp256k1_context_destroy(ctx);
     return 0;
 }
-

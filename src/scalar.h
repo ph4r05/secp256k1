@@ -9,9 +9,7 @@
 
 #include "num.h"
 
-#if defined HAVE_CONFIG_H
 #include "../../secp256k1-config.h"
-#endif
 
 #if defined(EXHAUSTIVE_TEST_ORDER)
 #include "scalar_low.h"
